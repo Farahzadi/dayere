@@ -1,0 +1,36 @@
+/* Palation font */
+@font-face {
+    font-family: palatino;
+    font-weight: normal;
+    src: url("./assets/fonts/palatino-webfonts/bahij/Palatino Sans-Regular.woff") format("woff"),
+    url("./assets/fonts/palatino-webfonts/bahij/PalatinoSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: palatino;
+    font-weight: bold;
+    src: url("./assets/fonts/palatino-webfonts/bahij/PalatinoSans-Bold.woff") format("woff"),
+    url("./assets/fonts/palatino-webfonts/bahij/PalatinoSans-Bold.ttf") format("truetype");
+}
+
+/* Diroz font */
+@font-face {
+    font-family: dirooz;
+    src: url("./assets/fonts/Dirooz/Dirooz-WOL.woff2") format("woff2"),
+    url("./assets/fonts/Dirooz/Dirooz-WOL.woff") format("woff"),
+    url("./assets/fonts/Dirooz/Dirooz-WOL.ttf") format("truetype"),
+    url("./assets/fonts/Dirooz/Dirooz-WOL.eot");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    font-family: dirooz;
+}
+
+img {
+    max-width: 100%;
+}
