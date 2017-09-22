@@ -5,6 +5,7 @@
         "jest": true
     },
     "rules": {
+        "comma-dangle": ["error", "never"],
         "semi": ["warn", "never"],
         "react/jsx-filename-extension": "off",
         "import/prefer-default-export": "off"
