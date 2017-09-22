@@ -93,9 +93,15 @@
     }
     .poem__verse:nth-child(odd), .poem__verse:nth-child(even) {
         padding: 0;
-        text-align: justify;
+        text-align: center;
     }
     .landing-screen__poem {
         margin: 0;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .poem__verse:nth-child(odd), .poem__verse:nth-child(even) {
+        text-align: justify;
     }
 }
