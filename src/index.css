@@ -29,8 +29,14 @@
 body {
     background: white;
     font-family: dirooz;
+    direction: rtl;
+    text-align: right;
 }
 
 img {
     max-width: 100%;
+}
+
+.text-orange {
+    color: orangered;
 }

@@ -2,8 +2,100 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 15vh 15vw 0;
     padding: 60px;
-    height: 85vh;
+    height: 100vh;
     font-size: 25px;
+}
+
+.landing-screen__quote {
+    width: 100%;
+}
+
+.landing-screen__poem:before{
+    content: '\201D';
+    width: 100%;
+    font-size: 40px;
+    line-height: 1em;
+    height: 22px;
+    margin: 5px 0;
+    font-weight: bold;
+    color: orangered;
+    vertical-align: middle;
+}
+
+.landing-screen__poem:after{
+    content: '\201C';
+    width: 100%;
+    text-align: left;
+    line-height: 1em;
+    height: 22px;
+    margin: 5px 0;
+    font-weight: bold;
+    color: orangered;
+    vertical-align: middle;
+    font-size: 40px;
+}
+
+.poem {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: stretch;
+    padding: 15px;
+}
+
+.poem__verse {
+    width: 50%;
+    display: block;
+}
+
+.poem__verse:nth-child(odd) {
+    text-align: left;
+    padding-left: 30px;
+}
+
+.poem__verse:nth-child(even) {
+    padding-right: 30px;
+}
+
+.poem__verse:after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: orangered;
+    border-radius: 100px;
+    margin: 0 5px;
+}
+
+.landing-screen__first-header {
+    font-size: 38px;
+    text-align: center;
+    margin: 0;
+    color: #222;
+    margin: 5px;
+}
+
+.landing-screen__second-header {
+    font-size: 22px;
+    margin: 0;
+    color: #666;
+    margin: 5px;
+    text-align: center;
+}
+
+@media screen and (max-width: 720px){
+    .landing-screen {
+        padding: 15px;        
+    }
+    .poem__verse {
+        width: 100%;
+    }
+    .poem__verse:nth-child(odd), .poem__verse:nth-child(even) {
+        padding: 0;
+        text-align: justify;
+    }
+    .landing-screen__poem {
+        margin: 0;
+    }
 }
