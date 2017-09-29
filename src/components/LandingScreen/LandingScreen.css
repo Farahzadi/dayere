@@ -1,10 +1,28 @@
 .landing-screen {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 60px;
     height: 100vh;
     font-size: 25px;
+    text-align: center;
+}
+
+.landing-screen:before{
+    content: '';
+    display: block;
+    background: url(../../assets/images/pencil.jpg) no-repeat bottom right;
+    background-size: cover;
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+.landing-screen__content{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
 }
 
 .landing-screen__quote {
@@ -20,6 +38,7 @@
     margin: 5px 0;
     font-weight: bold;
     color: orangered;
+    text-align: right;
     vertical-align: middle;
 }
 
@@ -42,6 +61,7 @@
     align-items: center;
     justify-content: stretch;
     padding: 15px;
+    margin: 0;
 }
 
 .poem__verse {
@@ -56,6 +76,7 @@
 
 .poem__verse:nth-child(even) {
     padding-right: 30px;
+    text-align: left;
 }
 
 .poem__verse:after {
@@ -74,6 +95,7 @@
     margin: 0;
     color: #222;
     margin: 5px;
+    margin-top: 50px;
 }
 
 .landing-screen__second-header {
@@ -82,6 +104,12 @@
     color: #666;
     margin: 5px;
     text-align: center;
+}
+
+@media screen and (max-width: 1024px){
+    .landing-screen:before{
+        background-position: bottom 0 right 20%;
+    }
 }
 
 @media screen and (max-width: 720px){
@@ -101,6 +129,10 @@
 }
 
 @media screen and (max-width: 470px) {
+    .landing-screen__first-header {
+        font-size: 30px;
+        margin-top: 20px;
+    }
     .poem__verse:nth-child(odd), .poem__verse:nth-child(even) {
         text-align: justify;
     }
