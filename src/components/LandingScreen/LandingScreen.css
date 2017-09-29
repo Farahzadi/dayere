@@ -106,6 +106,23 @@
     text-align: center;
 }
 
+.landing-screen__pager {
+    position: absolute;
+    bottom: 0px;
+    right: 0;
+    left: 0;
+    width: 50px;
+    margin: auto;
+    font-size: 80px;
+    line-height: 1em;
+    align-self: center;
+    color: orangered;
+}
+
+.landing-screen__pager:hover {
+    animation: suspend 1s infinite;
+}
+
 @media screen and (max-width: 1024px){
     .landing-screen:before{
         background-position: bottom 0 right 20%;
@@ -135,5 +152,17 @@
     }
     .poem__verse:nth-child(odd), .poem__verse:nth-child(even) {
         text-align: justify;
+    }
+}
+
+@keyframes suspend {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
     }
 }
