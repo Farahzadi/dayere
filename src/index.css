@@ -26,6 +26,10 @@
     box-sizing: border-box;
 }
 
+::selection {
+    background: #ffb7b7;
+}
+
 body {
     background: white;
     font-family: dirooz;
