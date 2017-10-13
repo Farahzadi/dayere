@@ -3,6 +3,7 @@
     height: 100vh;
     text-align: center;
     font-size: 26px;
+    overflow: hidden;
 }
 
 .landing-screen:before{
@@ -70,23 +71,13 @@
 }
 
 .poem__verse:nth-child(odd) {
-    text-align: left;
-    padding-left: 30px;
+    text-align: right;
+    padding-left: 10px;
 }
 
 .poem__verse:nth-child(even) {
-    padding-right: 30px;
     text-align: left;
-}
-
-.poem__verse:after {
-    content: '';
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background: orangered;
-    border-radius: 100px;
-    margin: 0 5px;
+    padding-right: 10px;
 }
 
 .landing-screen__first-header {
@@ -157,6 +148,7 @@
     .landing-screen__content {
         background: rgba(255, 255, 255, 0.8);
         height: 100%;
+        width: 100%;
     }
 
     .landing-screen__first-header {
@@ -186,6 +178,14 @@
 @media screen and (max-height: 520px) {
     .landing-screen__first-header {
         margin-top: 0;
+    }
+
+    .landing-screen__pager {
+        margin: 0;
+        right: auto;
+        left: 20px;
+        bottom: 10px;
+        font-size: 50px;
     }
 }
 
