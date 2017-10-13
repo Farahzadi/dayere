@@ -8,7 +8,7 @@ const LandingScreen = () => (
   <div className="landing-screen">
     <section className="landing-screen__content">
       <div>
-        <img src={logo} width="400" alt="دایره" />
+        <img src={logo} width="350" alt="دایره" />
       </div>
       <blockquote className="poem landing-screen__poem">
         <span className="poem__verse">
