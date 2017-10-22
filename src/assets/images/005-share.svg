@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="53px" height="53px" viewBox="0 0 53 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>005-share</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="دایره-خودتو-بساز" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-376.000000, -409.000000)" fill-rule="nonzero">
+            <g id="005-share" transform="translate(376.000000, 409.000000)">
+                <ellipse id="Oval" fill="#FFD15C" cx="14" cy="26.5" rx="14" ry="14.5"></ellipse>
+                <circle id="Oval" fill="#FFFFFF" cx="14" cy="26" r="9"></circle>
+                <circle id="Oval" fill="#84DBFF" cx="42.5" cy="10.5" r="10.5"></circle>
+                <circle id="Oval" fill="#FFFFFF" cx="43.5" cy="10.5" r="6.5"></circle>
+                <circle id="Oval" fill="#FF7058" cx="42.5" cy="42.5" r="10.5"></circle>
+                <g id="Group" transform="translate(25.000000, 13.000000)" fill="#40596B">
+                    <path d="M10.82532,4.94977778 L9.21613,5.84652874 L2.89454,9.32153257 C2.3199,7.52803065 1.28535,5.84652874 0.13596,4.38924138 L6.45755,0.914237548 L8.06674,0.01748659 C8.52654,1.92320307 9.56098,3.6045977 10.82532,4.94977778 Z" id="Shape"></path>
+                    <path d="M10.94027,22.9972261 C9.56098,24.3424061 8.52654,26.0238008 8.06685,27.9295172 L6.45766,27.0327663 L0.02112,23.3335479 C1.28546,21.8762605 2.20495,20.1948659 2.89454,18.4012567 L9.33108,22.1004751 L10.94027,22.9972261 Z" id="Shape"></path>
+                </g>
+                <g id="Group" transform="translate(31.000000, 13.000000)" fill="#334A5E">
+                    <path d="M3.8487619,4.94977778 L2.45552381,5.84652874 C1.36085714,4.50134866 0.465238095,2.81995402 0.0671428571,0.914344828 L1.46038095,0.0175938697 C1.85847619,1.92320307 2.75409524,3.6045977 3.8487619,4.94977778 Z" id="Shape"></path>
+                    <path d="M3.94828571,22.9972261 C2.75409524,24.3424061 1.85847619,26.0238008 1.46047619,27.9295172 L0.0672380952,27.0327663 C0.564761905,25.1271571 1.46047619,23.4456552 2.55504762,22.1004751 L3.94828571,22.9972261 Z" id="Shape"></path>
+                </g>
+                <circle id="Oval" fill="#FFFFFF" cx="43.5" cy="43.5" r="6.5"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

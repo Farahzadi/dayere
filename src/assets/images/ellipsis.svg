@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="56px" height="14px" viewBox="0 0 56 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47 (45396) - http://www.bohemiancoding.com/sketch -->
+    <title>ellipsis</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="دایره-خودتو-بساز" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-1304.000000, -658.000000)" fill-rule="nonzero" fill="#000000">
+            <g id="ellipsis" transform="translate(1304.000000, 658.000000)">
+                <path d="M7,0 C3.15,0 0,3.15 0,7 C0,10.85 3.15,14 7,14 C10.85,14 14,10.85 14,7 C14,3.15 10.85,0 7,0 Z M49,0 C45.15,0 42,3.15 42,7 C42,10.85 45.15,14 49,14 C52.85,14 56,10.85 56,7 C56,3.15 52.85,0 49,0 Z M28,0 C24.15,0 21,3.15 21,7 C21,10.85 24.15,14 28,14 C31.85,14 35,10.85 35,7 C35,3.15 31.85,0 28,0 Z" id="Shape"></path>
+            </g>
+        </g>
+    </g>
+</svg>
