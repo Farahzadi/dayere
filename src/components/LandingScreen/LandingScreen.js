@@ -1,4 +1,7 @@
 import React from 'react'
+import {
+  Link
+} from 'react-router-dom'
 
 import logo from '../../assets/images/icon.svg'
 import './LandingScreen.css'
@@ -23,9 +26,9 @@ const LandingScreen = () => (
       <h1 className="landing-screen__first-header">آژانس تبلیغات دیجیتال دایره</h1>
       <h2 className="landing-screen__second-header">راه حل های خلاق از ایده تا اجرا</h2>
     </section>
-    <a href="/ba" className="landing-screen__pager">
+    <Link to="/what-we-do" className="landing-screen__pager">
       <span className="icon ion-ios-arrow-down" />
-    </a>
+    </Link>
   </div>
 )
 

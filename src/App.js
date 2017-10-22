@@ -1,14 +1,21 @@
-import React, { Component } from 'react'
+import React from 'react'
+import {
+  BrowserRouter as Router,
+  Route
+} from 'react-router-dom'
 
 import { LandingScreen } from './components/LandingScreen'
+import { WhatWeDoScreen } from './components/WhatWeDoScreen'
 import './App.css'
 
 
-// eslint-disable-next-line react/prefer-stateless-function
-class App extends Component {
-  render() {
-    return <LandingScreen />
-  }
-}
+const App = () => (
+  <Router>
+    <div>
+      <Route exact path="/" component={LandingScreen} />
+      <Route path="/what-we-do" component={WhatWeDoScreen} />
+    </div>
+  </Router>
+)
 
 export default App
