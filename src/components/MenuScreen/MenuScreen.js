@@ -7,6 +7,7 @@ import { AboutScreen } from '../AboutScreen'
 import { WhatWeDoScreen } from '../WhatWeDoScreen'
 import { BuildYourCircleScreen } from '../BuildYourCircleScreen'
 import { NavBar, NavItem } from '../NavBar'
+import { Footer } from '../Footer'
 
 const MenuScreen = ({ match }) => (
   <div>
@@ -24,6 +25,7 @@ const MenuScreen = ({ match }) => (
     <Route path="/how-we-built-our-circle" component={AboutScreen} />
     <Route path="/what-we-do" component={WhatWeDoScreen} />
     <Route path="/build-your-circle" component={BuildYourCircleScreen} />
+    <Footer />
   </div>
 )
 
