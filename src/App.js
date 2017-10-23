@@ -5,7 +5,7 @@ import {
 } from 'react-router-dom'
 
 import { LandingScreen } from './components/LandingScreen'
-import { WhatWeDoScreen } from './components/WhatWeDoScreen'
+import { MenuScreen } from './components/MenuScreen'
 import './App.css'
 
 
@@ -13,7 +13,7 @@ const App = () => (
   <Router>
     <div>
       <Route exact path="/" component={LandingScreen} />
-      <Route path="/what-we-do" component={WhatWeDoScreen} />
+      <Route path="/what-we-do" component={MenuScreen} />
     </div>
   </Router>
 )
