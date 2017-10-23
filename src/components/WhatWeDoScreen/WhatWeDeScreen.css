@@ -1,0 +1,30 @@
+.services {
+  margin-top: 60px;
+}
+
+.services__section:nth-child(even) {
+  direction: ltr;
+}
+
+.services__section + .services__section {
+  margin-top: 50px;
+}
+
+.services__title {
+  margin-top: 0;
+}
+
+.services__article {
+  display: inline-block;
+  width: 66%;
+  text-align: justify;
+  padding: 15px;
+  vertical-align: top;
+}
+
+.services__image {
+  width: calc(33% - 30px);
+  margin: 15px;
+  vertical-align: top;
+  box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.3);
+}

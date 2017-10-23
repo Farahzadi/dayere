@@ -1,5 +1,6 @@
 .nav-bar {
   padding: 15px 30px;
+  border-bottom: 2px solid orangered;
 }
 
 .nav-bar__container {

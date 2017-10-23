@@ -61,6 +61,12 @@ img {
 .container {
     margin: auto;
 }
+
+.content {
+    overflow: auto;
+    height: calc(100vh - 120px);
+    padding-bottom: 120px;
+}
   
 @media screen and (min-width: 768px) {
     .container {
