@@ -13,7 +13,9 @@ const App = () => (
   <Router>
     <div>
       <Route exact path="/" component={LandingScreen} />
+      <Route path="/how-we-built-our-circle" component={MenuScreen} />
       <Route path="/what-we-do" component={MenuScreen} />
+      <Route path="/build-your-circle" component={MenuScreen} />
     </div>
   </Router>
 )
