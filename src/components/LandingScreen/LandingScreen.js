@@ -54,7 +54,7 @@ const LandingScreen = () => (
         <h1 className="landing-screen__first-header">آژانس تبلیغات دیجیتال دایره</h1>
         <h2 className="landing-screen__second-header">راه حل های خلاق از ایده تا اجرا</h2>
       </section>
-      <Link to="/how-we-built-our-circle" className="landing-screen__pager">
+      <Link to="/what-we-do" className="landing-screen__pager">
         <span className="icon ion-ios-arrow-down" />
       </Link>
     </div>
