@@ -1,5 +1,8 @@
 .nav-bar {
   padding: 15px 30px;
+}
+
+.nav-bar__container {
   display: flex;
   justify-content: space-between;
   align-items: center;

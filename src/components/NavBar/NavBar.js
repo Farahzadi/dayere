@@ -4,13 +4,14 @@ import './NavBar.css'
 import logo from '../../assets/images/icon.svg'
 
 
-const NavBar = ({ children, selected }) => (
+const NavBar = ({ children }) => (
   <nav className="nav-bar">
-    {selected}
-    <img src={logo} alt="دایره" style={{ height: 90 }}/>
-    <ul className="nav-bar__list">
-      {children}
-    </ul>
+    <div className="container nav-bar__container">
+      <img src={logo} alt="دایره" style={{ height: 90 }} />
+      <ul className="nav-bar__list">
+        {children}
+      </ul>
+    </div>
   </nav>
 )
 
