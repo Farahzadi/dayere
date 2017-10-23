@@ -1,0 +1,26 @@
+.nav-bar {
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-bar__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+.nav-bar__link {
+  display: block;
+  padding: 15px 20px;
+  margin: 0 15px;
+  text-decoration: none;
+  text-align: center;
+  color: #aaa;
+}
+
+.nav-bar__link.is-selected {
+  color: #333;
+}

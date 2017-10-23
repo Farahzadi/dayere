@@ -57,3 +57,31 @@ img {
 .icon {
     display: inline-block;
 }
+
+.container {
+    margin: auto;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .container {
+      width: 768px;
+    }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .container {
+      width: 1024px;
+    }
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .container {
+      width: 1280px;
+    }
+  }
+  
+  @media screen and (min-width: 1440px) {
+    .container {
+      width: 1440px;  
+    }
+  }
