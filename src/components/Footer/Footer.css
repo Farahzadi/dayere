@@ -4,7 +4,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: 30px;
+  padding: 15px;
   color: #f1f1f1;
 }
 
@@ -22,6 +22,7 @@
 .contact-section__icon {
   margin: 0 5px;
   display: block;
+  width: 30px;
 }
 
 .contact-section__link {
