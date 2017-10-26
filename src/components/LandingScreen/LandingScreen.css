@@ -1,9 +1,5 @@
 .landing-screen {
-<<<<<<< HEAD
     padding: 5vh;
-=======
-    padding: 30px;
->>>>>>> b6105220e9cf9bd1da628793e0664c813d659fc6
     height: 100vh;
     text-align: center;
     font-size: 26px;
@@ -38,7 +34,7 @@
     content: '\201D';
     width: 100%;
     font-size: 5vh;
-    line-height: 1em;
+    line-height: 60px;
     height: 3vh;
     margin: 5px 0;
     font-weight: bold;
@@ -51,7 +47,7 @@
     content: '\201C';
     width: 100%;
     text-align: left;
-    line-height: 1em;
+    line-height: 60px;
     height: 3vh;
     margin: 5px 0;
     font-weight: bold;

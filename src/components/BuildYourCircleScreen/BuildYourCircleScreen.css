@@ -1,0 +1,9 @@
+.circle-title {
+    text-align: center;
+    font-size: 26px;
+    margin: 20px 0;
+    background: url('../../assets/images/stain.svg') top center no-repeat;
+    color: white;
+    background-size: 50% 100%;
+    padding: 30px 15px;
+}

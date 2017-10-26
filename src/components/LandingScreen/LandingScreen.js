@@ -39,13 +39,13 @@ const LandingScreen = () => (
     <div className="landing-screen">
       <section className="landing-screen__content">
         <div>
-          <img src={logo} width="350" alt="دایره" />
+          <img className="landing-screen__img" src={logo} width="350" alt="دایره" />
         </div>
         <blockquote className="poem landing-screen__poem">
           <span className="poem__verse">
-            آن کــه پـــرنــقــش زد ایــن
-            <b className="text-orange"> دایـــــره </b>
-            میـنـایـی
+            آن کـه پرنقش زد ایـن
+            <b className="text-orange"> دایـــره </b>
+            مینایی
           </span>
           <span className="poem__verse">
             کس ندانست که در گردش پرگار چه کرد

@@ -6,6 +6,10 @@
   direction: ltr;
 }
 
+.services__section {
+  line-height: 1.4em;
+}
+
 .services__section + .services__section {
   margin-top: 150px;
 }
