@@ -27,4 +27,7 @@
 
 .choice-box__title {
     font-size: 18px;
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 20px;
 }
