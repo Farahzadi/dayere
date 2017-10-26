@@ -17,9 +17,13 @@ const BuildYourCircleScreen = () => (
       <div className="grid">
         <div className="col">
           <a href="" className="choice-box">
-            <div>
+            <div style={{ display: 'flex', alignItems: 'center' }}>
               <img src={website} alt="website" />
               <h2 className="choice-box__title">وب سایت</h2>
+              <div style={{ flex: 1, textAlign: 'left' }}>
+                <input type="checkbox" checkbox="" />
+                <span className="ion-android-checkmark-circle pretty-checkbox" />
+              </div>
             </div>
             <div className="choice-box__body">
               طراحی و توسعه وب سایت شما در کمترین زمان و بهترین کیفیت

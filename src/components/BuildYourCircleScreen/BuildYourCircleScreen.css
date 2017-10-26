@@ -61,3 +61,12 @@
     margin: 0 20px;
     cursor: pointer;
 }
+
+.pretty-checkbox {
+    color: #bbb;
+    font-size: 44px;
+}
+
+input[type=checkbox]:checked + .pretty-checkbox {
+    color: green;
+}
