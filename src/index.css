@@ -156,3 +156,7 @@ img {
 .text-center {
     text-align: center;
 }
+
+button, input, optgroup, select, textarea {
+	font-family: IRANSans, roboto, sans-serif;
+}

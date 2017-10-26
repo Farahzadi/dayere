@@ -23,6 +23,11 @@
     border: 1px solid #e5e5e5;
     padding: 15px;
     height: 200px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
 }
 
 .choice-box__title {
@@ -30,4 +35,29 @@
     display: inline-block;
     vertical-align: top;
     margin-right: 20px;
+}
+
+.choice-box__body {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
+}
+
+.input {
+    border: 1px solid #e6e6e6;
+    resize: none;
+    width: 100%;
+    padding: 15px;
+}
+
+.button {
+    padding: 10px 25px;
+    border: none;
+    background: orangered;
+    color: white;
+    text-align: center;
+    margin: 0 20px;
+    cursor: pointer;
 }
