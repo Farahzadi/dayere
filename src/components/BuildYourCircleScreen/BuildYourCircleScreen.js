@@ -8,6 +8,7 @@ import seo from '../../assets/images/seo-tag.svg'
 import market from '../../assets/images/002-presentation.svg'
 import social from '../../assets/images/005-share.svg'
 import ellipsis from '../../assets/images/ellipsis.svg'
+import { ChoiceBox } from './ChoiceBox'
 
 
 const BuildYourCircleScreen = () => (
@@ -16,83 +17,55 @@ const BuildYourCircleScreen = () => (
       <h1 className="circle-title">چه خدماتی نیاز داری</h1>
       <div className="grid">
         <div className="col">
-          <a href="" className="choice-box">
-            <div style={{ display: 'flex', alignItems: 'center' }}>
-              <img src={website} alt="website" />
-              <h2 className="choice-box__title">وب سایت</h2>
-              <div style={{ flex: 1, textAlign: 'left' }}>
-                <input type="checkbox" checkbox="" />
-                <span className="ion-android-checkmark-circle pretty-checkbox" />
-              </div>
-            </div>
-            <div className="choice-box__body">
-              طراحی و توسعه وب سایت شما در کمترین زمان و بهترین کیفیت
-            </div>
-          </a>
+          <ChoiceBox
+            image={website}
+            title="وب سایت"
+            text="طراحی و توسعه وب سایت شما در کمترین زمان و بهترین کیفیت"
+          />
         </div>
         <div className="col">
-          <a href="" className="choice-box">
-            <div>
-              <img src={mobile} alt="mobile" />
-              <h2 className="choice-box__title">برنامه موبایل</h2>
-            </div>
-            <div className="choice-box__body">
-              طراحی و توسعه وب سایت شما در کمترین زمان و بهترین کیفیت
-            </div>
-          </a>
+          <ChoiceBox
+            image={mobile}
+            title="برنامه موبایل"
+            text="طراحی و توسعه وب سایت شما در کمترین زمان و بهترین کیفیت"
+          />
         </div>
         <div className="col">
-          <a href="" className="choice-box">
-            <div>
-              <img src={graphic} alt="Graphic Design" />
-              <h2 className="choice-box__title">گرافیک</h2>
-            </div>
-            <div className="choice-box__body">
-              طراحی و توسعه وب سایت شما در کمترین زمان و بهترین کیفیت
-            </div>
-          </a>
+          <ChoiceBox
+            image={graphic}
+            title="گرافیک"
+            text="طراحی و توسعه وب سایت شما در کمترین زمان و بهترین کیفیت"
+          />
         </div>
         <div className="col">
-          <a href="" className="choice-box">
-            <div>
-              <img src={seo} alt="SEO" />
-              <h2 className="choice-box__title">بهینه‌سازی موتور جستجو</h2>
-            </div>
-            <div className="choice-box__body">
-              طراحی و توسعه وب سایت شما در کمترین زمان و بهترین کیفیت
-            </div>
-          </a>
+          <ChoiceBox
+            image={seo}
+            title="بهینه‌سازی موتور جستجو"
+            text="طراحی و توسعه وب سایت شما در کمترین زمان و بهترین کیفیت"
+          />
         </div>
         <div className="col">
-          <a href="" className="choice-box">
-            <div>
-              <img src={market} alt="Market Research" />
-              <h2 className="choice-box__title">تحقیقات بازار</h2>
-            </div>
-            <div className="choice-box__body">
-              طراحی و توسعه وب سایت شما در کمترین زمان و بهترین کیفیت
-            </div>
-          </a>
+          <ChoiceBox
+            image={market}
+            title="تحقیقات بازار"
+            text="طراحی و توسعه وب سایت شما در کمترین زمان و بهترین کیفیت"
+          />
         </div>
         <div className="col">
-          <a href="" className="choice-box">
-            <div>
-              <img src={social} alt="Social Media" />
-              <h2 className="choice-box__title">شبکه‌های اجتماعی</h2>
-            </div>
-            <div className="choice-box__body">
-              طراحی و توسعه وب سایت شما در کمترین زمان و بهترین کیفیت
-            </div>
-          </a>
+          <ChoiceBox
+            image={social}
+            title="شبکه‌های اجتماعی"
+            text="طراحی و توسعه وب سایت شما در کمترین زمان و بهترین کیفیت"
+          />
         </div>
       </div>
-      <div className="choice-box" style={{ margin: 20 }}>
+      <div className="choice-box" style={{ margin: '20px 25px', cursor: 'default' }}>
         <div>
           <img src={ellipsis} alt="" width="40" height="50" />
           <h2 className="choice-box__title">توضیح بیشتر</h2>
         </div>
         <div className="choice-box__body" style={{ alignItems: 'stretch' }}>
-          <textarea className="input" />
+          <textarea className="input" placeholder="اینجا بنویس..." />
         </div>
       </div>
       <div style={{ textAlign: 'left', marginBottom: 20 }}>

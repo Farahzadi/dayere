@@ -11,6 +11,7 @@
 .grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .col {
@@ -35,6 +36,11 @@
     display: inline-block;
     vertical-align: top;
     margin-right: 20px;
+}
+
+.choice-box__header {
+    display: flex;
+    align-items: center;
 }
 
 .choice-box__body {
@@ -65,6 +71,11 @@
 .pretty-checkbox {
     color: #bbb;
     font-size: 44px;
+}
+
+.pretty-checkbox__container {
+    flex: 1;
+    text-align: left;
 }
 
 input[type=checkbox]:checked + .pretty-checkbox {
