@@ -71,6 +71,7 @@
 .pretty-checkbox {
     color: #bbb;
     font-size: 44px;
+    transition: color 0.4s;
 }
 
 .pretty-checkbox__container {
@@ -79,5 +80,5 @@
 }
 
 input[type=checkbox]:checked + .pretty-checkbox {
-    color: green;
+    color: orangered;
 }
