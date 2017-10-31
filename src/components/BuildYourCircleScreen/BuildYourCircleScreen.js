@@ -13,7 +13,7 @@ import { ChoiceBox } from './ChoiceBox'
 
 const BuildYourCircleScreen = () => (
   <div className="content">
-    <div className="container">
+    <form className="container">
       <h1 className="circle-title">چه خدماتی نیاز داری</h1>
       <div className="grid">
         <div className="col">
@@ -71,13 +71,38 @@ const BuildYourCircleScreen = () => (
           <h2 className="choice-box__title">توضیح بیشتر</h2>
         </div>
         <div className="choice-box__body" style={{ alignItems: 'stretch' }}>
-          <textarea className="input" placeholder="اینجا بنویس..." />
+          <textarea className="input textarea" placeholder="اینجا بنویس..." />
         </div>
       </div>
-      <div style={{ textAlign: 'left', marginBottom: 20 }}>
-        <button className="button">ارسال</button>
-      </div>
-    </div>
+      <fieldset>
+        <legend>اطلاعات تماس</legend>
+        <div className="grid">
+          <div className="col form-container">
+            <label className="form-label" htmlFor="firstName">نام</label>
+            <input id="firstName" name="firstName" className="input" type="text" />
+          </div>
+          <div className="col form-container">
+            <label className="form-label" htmlFor="lastName">نام خانوادگی</label>
+            <input id="lastName" name="lastName" className="input" type="text" />
+          </div>
+          <div className="col form-container">
+            <label className="form-label" htmlFor="telephone">تلفن</label>
+            <input id="telephone" name="telephone" className="input" type="text" />
+          </div>
+          <div className="col form-container">
+            <label className="form-label" htmlFor="email">ایمیل</label>
+            <input id="email" name="email" className="input" type="text" />
+          </div>
+          <div className="col form-container">
+            <label className="form-label" htmlFor="organization">سازمان / شرکت</label>
+            <input id="organization" name="organization" className="input" type="text" />
+          </div>
+          <div className="col" style={{ textAlign: 'left' }}>
+            <button className="button">ارسال</button>
+          </div>
+        </div>
+      </fieldset>
+    </form>
   </div>
 )
 
