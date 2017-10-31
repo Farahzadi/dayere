@@ -121,7 +121,8 @@ img {
 }
 
 .container {
-    margin: auto;
+	margin: auto;
+	padding: 0 15px;
 }
 
 .content {
