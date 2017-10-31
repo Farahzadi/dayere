@@ -15,7 +15,7 @@ class ChoiceBox extends React.Component {
     return (
       <a
         href=""
-        className="choice-box"
+        className={ selected ? 'choice-box is-selected' : 'choice-box'}
         onClick={(e) => {
           e.preventDefault()
           this.setState({ selected: !selected })

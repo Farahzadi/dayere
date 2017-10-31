@@ -28,6 +28,11 @@
     cursor: pointer;
     text-decoration: none;
     color: inherit;
+    transition: border-color 0.4s;
+}
+
+.choice-box.is-selected {
+    border-color: orangered;
 }
 
 .choice-box__title {
