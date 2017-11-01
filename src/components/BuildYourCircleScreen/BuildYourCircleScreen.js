@@ -71,7 +71,7 @@ const BuildYourCircleScreen = () => (
           <h2 className="choice-box__title">توضیح بیشتر</h2>
         </div>
         <div className="choice-box__body" style={{ alignItems: 'stretch' }}>
-          <textarea className="input textarea" placeholder="اینجا بنویس..." />
+          <textarea className="input textarea" name="explanation" placeholder="اینجا بنویس..." />
         </div>
       </div>
       <fieldset>
@@ -79,11 +79,11 @@ const BuildYourCircleScreen = () => (
         <div className="grid">
           <div className="col form-container">
             <label className="form-label" htmlFor="firstName">نام</label>
-            <input id="firstName" name="firstName" className="input" type="text" />
+            <input required id="firstName" name="firstName" className="input" type="text" />
           </div>
           <div className="col form-container">
             <label className="form-label" htmlFor="lastName">نام خانوادگی</label>
-            <input id="lastName" name="lastName" className="input" type="text" />
+            <input required id="lastName" name="lastName" className="input" type="text" />
           </div>
           <div className="col form-container">
             <label className="form-label" htmlFor="telephone">تلفن</label>
@@ -91,7 +91,7 @@ const BuildYourCircleScreen = () => (
           </div>
           <div className="col form-container">
             <label className="form-label" htmlFor="email">ایمیل</label>
-            <input id="email" name="email" className="input" type="text" />
+            <input required id="email" name="email" className="input" type="text" />
           </div>
           <div className="col form-container">
             <label className="form-label" htmlFor="organization">سازمان / شرکت</label>

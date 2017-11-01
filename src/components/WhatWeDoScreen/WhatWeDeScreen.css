@@ -25,6 +25,7 @@
   text-align: justify;
   padding: 15px;
   vertical-align: top;
+  direction: rtl;
 }
 
 .services__image {

@@ -1,6 +1,7 @@
 .nav-bar {
   padding: 15px 30px;
-  border-bottom: 2px solid orangered;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
 .nav-bar__container {
@@ -25,6 +26,12 @@
   color: #aaa;
 }
 
+.nav-bar__link:hover, .nav-bar__link:focus:not(.is-selected) {
+  border-bottom: 3px solid orangered;
+  outline: none;
+}
+
 .nav-bar__link.is-selected {
   color: #333;
+  border-bottom: 3px solid orangered;
 }

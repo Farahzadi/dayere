@@ -25,7 +25,7 @@ class ChoiceBox extends React.Component {
           <img src={image} alt={title} />
           <h2 className="choice-box__title">{title}</h2>
           <div className="pretty-checkbox__container">
-            <input type="checkbox" name="service" checked={selected} style={{ display: 'none' }} />
+            <input type="checkbox" name="service" checked={selected} value={title} style={{ display: 'none' }} />
             <span className="ion-android-checkmark-circle pretty-checkbox" />
           </div>
         </div>
