@@ -24,18 +24,18 @@ const Footer = () => (
           02122069682
         </a>
       </div>
-      <div className="contact-section">
+      <div className="contact-section" style={{ direction: 'rtl' }}>
         <a className="social-icon" href="">
-          <img height="32" src={telegram} alt="telegram" />
+          <img height="24" src={telegram} alt="telegram" />
         </a>
         <a className="social-icon" href="">
-          <img height="32" src={instagram} alt="instagram" />
+          <img height="24" src={instagram} alt="instagram" />
         </a>
         <a className="social-icon" href="">
-          <img height="32" src={linkedin} alt="linkedin" />
+          <img height="24" src={linkedin} alt="linkedin" />
         </a>
         <a className="social-icon" href="">
-          <img height="32" src={twitter} alt="twitter" />
+          <img height="24" src={twitter} alt="twitter" />
         </a>
       </div>
     </div>

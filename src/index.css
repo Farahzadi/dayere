@@ -161,3 +161,8 @@ img {
 button, input, optgroup, select, textarea {
 	font-family: IRANSans, roboto, sans-serif;
 }
+
+textarea:focus, input:focus, a:focus, button:focus {
+	outline: 1px solid rgba(255, 68, 0, 0.548);
+	outline-offset: -1px;
+}
