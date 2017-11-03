@@ -17,6 +17,18 @@ class NavBar extends React.Component {
     }
   }
 
+  componentDidUpdate() {
+    if (this.state.active) {
+      document.ontouchmove = (e) => { e.preventDefault() }
+    } else {
+      document.ontouchmove = () => true
+    }
+  }
+
+  componentWillUnmount() {
+    document.ontouchmove = () => true
+  }
+
   toggleSideBar = () => {
     const { active } = this.state
     this.setState({ active: !active })

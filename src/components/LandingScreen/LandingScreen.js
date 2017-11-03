@@ -36,14 +36,10 @@ const Fade = ({ children, ...props }) => (
 
 class LandingScreen extends React.Component {
   componentDidMount() {
-    // document.documentElement.className = 'lock'
-    // document.body.className = 'lock'
     document.ontouchmove = (e) => { e.preventDefault() }
   }
 
   componentWillUnmount() {
-    // document.documentElement.className = ''
-    // document.body.className = ''
     document.ontouchmove = () => true
   }
 
