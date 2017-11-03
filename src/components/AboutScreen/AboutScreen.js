@@ -6,7 +6,7 @@ import './AboutScreen.css'
 const AboutScreen = () => (
   <div className="content">
     <div className="about-banner" />
-    <div className="shablet">
+    <div className="shablet container">
       <h1 className="text-center">چگونه آغاز شد</h1>
       <p>
         ی‌خواهم کلام خود را درباره خواردارندگان تن در میان گذارم. نخواهم چیزی

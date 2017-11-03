@@ -6,10 +6,6 @@
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    width: 768px;
-  }
-
   .about-banner {
     background: url('../../assets/images/banner.jpeg') top center no-repeat;
     background-size: cover;
@@ -18,34 +14,20 @@
 
   .shablet {
     background: white;
-    width: 80%;
     margin: auto;
     margin-top: -30vh;
-    padding: 50px;
+    padding: 30px 50px;
     box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.3);
     min-height: 700px;
   }
-
 }
 
 @media screen and (min-width: 1024px) {
-  .container {
-    width: 1024px;
-  }
-
   .shablet {
-
+    padding: 50px 100px;
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .container {
-    width: 1280px;
-  }
-}
+@media screen and (min-width: 1280px) {}
 
-@media screen and (min-width: 1440px) {
-  .container {
-    width: 1440px;
-  }
-}
+@media screen and (min-width: 1440px) {}

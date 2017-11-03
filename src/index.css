@@ -126,8 +126,8 @@ img {
 }
 
 .content {
-    overflow: auto;
-    height: calc(100vh - 180px);
+	overflow: auto;
+    height: calc(100vh - 155px);
 }
   
 @media screen and (min-width: 768px) {

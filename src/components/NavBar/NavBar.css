@@ -1,5 +1,5 @@
 .nav-bar {
-  padding: 15px 30px;
+  padding: 10px 30px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
   position: relative;
 }
@@ -18,18 +18,16 @@
 }
 
 .nav-bar__link {
+  transition: color 0.4s;
   position: relative;
   display: block;
-  padding: 15px 20px;
+  padding: 10px 20px;
   margin: 0 15px;
   text-decoration: none;
   text-align: center;
   color: #aaa;
 }
 
-.nav-bar__link:hover, .nav-bar__link:focus:not(.is-selected) {
-  
-}
 
 .nav-bar__link.is-selected {
   color: #333;
