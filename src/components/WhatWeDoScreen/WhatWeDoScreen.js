@@ -68,6 +68,7 @@ const WhatWeDoScreen = () => (
         <img className="services__image" src={image} alt="Digital Marketing" />
       </section>
     </main>
+    <br />
   </div>
 )
 

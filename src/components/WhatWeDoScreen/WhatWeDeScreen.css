@@ -11,7 +11,9 @@
 }
 
 .services__section + .services__section {
-  margin-top: 150px;
+  margin-top: 30px;
+  padding-top: 10px;
+  border-top: 1px solid #eee;
 }
 
 .services__title {
@@ -21,7 +23,6 @@
 
 .services__article {
   display: inline-block;
-  width: 66%;
   text-align: justify;
   padding: 15px;
   vertical-align: top;
@@ -29,8 +30,34 @@
 }
 
 .services__image {
-  width: calc(33% - 30px);
-  margin: 15px;
+  margin: auto;
   vertical-align: top;
-  box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (min-width: 768px) {
+  .services__section + .services__section {
+    margin-top: 60px;
+    border-top: none;
+  }
+
+  .services__article{
+    width: 60%;
+  }
+  .services__image {
+    width: calc(40% - 30px);
+    box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .services__section + .services__section {
+    margin-top: 150px;
+  }
+
+  .services__article{
+    width: 66%;
+  }
+  .services__image {
+    width: calc(33% - 30px);
+  }
 }
