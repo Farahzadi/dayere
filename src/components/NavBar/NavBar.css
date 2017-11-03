@@ -19,9 +19,10 @@
 
 .nav-bar__link, .side-nav__link {
   transition: color 0.4s;
+  overflow: hidden;
   position: relative;
   display: block;
-  padding: 10px 20px;
+  padding: 10px;
   margin: 0 15px;
   text-decoration: none;
   text-align: center;
@@ -34,39 +35,41 @@
 }
 
 .nav-bar__link:after {
-  transition: width 0.5s;
+  transition: transform 0.5s;
   content: '';
   display: block;
   position: absolute;
   bottom: 0;
-  right: 15px;
-  width: 0;
+  right: 0;
+  transform: translateX(100%);
   border-bottom: 2px solid orangered;
 }
 
 .nav-bar__link.is-selected:after, .nav-bar__link:hover:after {
-  width: calc(100% - 30px);
+  width: 100%;
+  transform: translateX(0);
 }
 
 .side-nav {
   position: fixed;
+  transform: translateX(-105%);
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: width 0.4s;
+  transition: transform 0.4s;
   left: 0;
   top: 0;
   bottom: 0;
   margin: 0;
+  width: 100%;
   background: white;
   padding-top: 40px;
-  width: 0;
   overflow: hidden;
   box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .side-nav.is-selected {
-  width: 100%;
+  transform: translateX(0);
 }
 
 .side-nav__list {
