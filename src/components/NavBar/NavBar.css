@@ -50,13 +50,16 @@
 
 .side-nav {
   position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   transition: width 0.4s;
   left: 0;
   top: 0;
   bottom: 0;
   margin: 0;
   background: white;
-  padding-top: 100px;
+  padding-top: 40px;
   width: 0;
   overflow: hidden;
   box-shadow: 2px 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -80,9 +83,28 @@
   white-space: nowrap;
 }
 
-
 @media screen and (min-width: 1024px) {
   .nav-bar {
     padding: 10px 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .side-nav .contact-section__link {
+    color: black;
+  }
+
+  .side-nav footer {
+    flex: 1;
+    width: 100%;
+    display: flex;
+  }
+
+  .side-nav .contact-container {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 60px;
   }
 }
