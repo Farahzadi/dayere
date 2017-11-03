@@ -16,25 +16,5 @@
       You need to enable JavaScript to run this app.
     </noscript>
     <div id="root"></div>
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var ham = document.getElementsByClassName('hamburger');
-        if (ham.length)
-          for (item in ham) {
-            if (ham.hasOwnProperty(item))
-              ham[item].addEventListener('click', function() {
-                var name = document.body.className;
-                if (name === 'lock') {
-                  document.documentElement.className = ''
-                  document.body.className = ''
-                }
-                else {
-                  document.documentElement.className = 'lock'
-                  document.body.className = 'lock'
-                }
-              })
-        }
-      });
-    </script>
   </body>
 </html>

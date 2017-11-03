@@ -17,6 +17,11 @@ class NavBar extends React.Component {
     }
   }
 
+  toggleSideBar = () => {
+    const { active } = this.state
+    this.setState({ active: !active })
+  }
+
   render() {
     const { children } = this.props
     const { active } = this.state
@@ -34,7 +39,7 @@ class NavBar extends React.Component {
               type="spin"
               active={active}
               style={{ position: 'fixed', left: 5, outline: 'none', zIndex: 1, top: 20 }}
-              onClick={() => { this.setState({ active: !active }) }}
+              onClick={this.toggleSideBar}
             />
             <div className={active ? 'side-nav is-selected' : 'side-nav'}>
               <ul className="side-nav__list">

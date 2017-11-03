@@ -4,8 +4,7 @@ import './AboutScreen.css'
 
 
 const AboutScreen = () => (
-  <div className="content">
-    <div className="about-banner" />
+  <div className="content about-banner">
     <div className="shablet container">
       <h1 className="text-center">چگونه آغاز شد</h1>
       <p>

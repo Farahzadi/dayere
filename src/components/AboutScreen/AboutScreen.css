@@ -1,21 +1,21 @@
 .shablet {
-  background: rgba(255, 255, 255, 0.9);
+  background: white;
   line-height: 1.4em;
   padding: 20px;
-  margin: 0 15px 60px 15px;
+}
+
+.about-banner {
+  background: url('../../assets/images/banner.jpeg') top center no-repeat;
+  background-size: cover;
 }
 
 @media screen and (min-width: 768px) {
   .about-banner {
-    background: url('../../assets/images/banner.jpeg') top center no-repeat;
-    background-size: cover;
-    height: 70vh;
+    padding-top: 20vh;
   }
-
   .shablet {
-    background: white;
+    max-width: 90%;
     margin: auto;
-    margin-top: -30vh;
     padding: 30px 50px;
     box-shadow: 0px 20px 40px 5px rgba(0, 0, 0, 0.3);
     min-height: 700px;
@@ -23,6 +23,7 @@
 }
 
 @media screen and (min-width: 1024px) {
+
   .shablet {
     padding: 50px 100px;
   }
