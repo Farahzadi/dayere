@@ -34,31 +34,47 @@ const Fade = ({ children, ...props }) => (
   </Transition>
 )
 
-const LandingScreen = () => (
-  <Fade in>
-    <div className="landing-screen">
-      <section className="landing-screen__content">
-        <div>
-          <img className="landing-screen__img" src={logo} width="350" alt="دایره" />
+class LandingScreen extends React.Component {
+  componentDidMount() {
+    // document.documentElement.className = 'lock'
+    // document.body.className = 'lock'
+    document.ontouchmove = (e) => { e.preventDefault() }
+  }
+
+  componentWillUnmount() {
+    // document.documentElement.className = ''
+    // document.body.className = ''
+    document.ontouchmove = () => true
+  }
+
+  render() {
+    return (
+      <Fade in>
+        <div className="landing-screen">
+          <section className="landing-screen__content">
+            <div>
+              <img className="landing-screen__img" src={logo} width="350" alt="دایره" />
+            </div>
+            <blockquote className="poem landing-screen__poem">
+              <span className="poem__verse">
+                آن کـه پرنقش زد ایـن
+                <b className="text-orange"> دایـــره </b>
+                مینایی
+              </span>
+              <span className="poem__verse">
+                کس ندانست که در گردش پرگار چه کرد
+              </span>
+            </blockquote>
+            <h1 className="landing-screen__first-header">آژانس تبلیغات دیجیتال دایره</h1>
+            <h2 className="landing-screen__second-header">راه حل های خلاق از ایده تا اجرا</h2>
+          </section>
+          <Link to="/what-we-do" className="landing-screen__pager">
+            <span className="icon ion-ios-arrow-down" />
+          </Link>
         </div>
-        <blockquote className="poem landing-screen__poem">
-          <span className="poem__verse">
-            آن کـه پرنقش زد ایـن
-            <b className="text-orange"> دایـــره </b>
-            مینایی
-          </span>
-          <span className="poem__verse">
-            کس ندانست که در گردش پرگار چه کرد
-          </span>
-        </blockquote>
-        <h1 className="landing-screen__first-header">آژانس تبلیغات دیجیتال دایره</h1>
-        <h2 className="landing-screen__second-header">راه حل های خلاق از ایده تا اجرا</h2>
-      </section>
-      <Link to="/what-we-do" className="landing-screen__pager">
-        <span className="icon ion-ios-arrow-down" />
-      </Link>
-    </div>
-  </Fade>
-)
+      </Fade>
+    )
+  }
+}
 
 export { LandingScreen }

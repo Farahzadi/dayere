@@ -24,13 +24,13 @@
             if (ham.hasOwnProperty(item))
               ham[item].addEventListener('click', function() {
                 var name = document.body.className;
-                if (name === 'open') {
+                if (name === 'lock') {
                   document.documentElement.className = ''
                   document.body.className = ''
                 }
                 else {
-                  document.documentElement.className = 'open'
-                  document.body.className = 'open'
+                  document.documentElement.className = 'lock'
+                  document.body.className = 'lock'
                 }
               })
         }

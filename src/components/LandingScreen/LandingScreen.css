@@ -1,9 +1,13 @@
 .landing-screen {
     padding: 5vh;
-    height: 100vh;
     text-align: center;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
     font-size: 26px;
     overflow: hidden;
+    position: fixed;
 }
 
 .landing-screen:before{
@@ -33,7 +37,7 @@
 .landing-screen__poem:before{
     content: '\201D';
     width: 100%;
-    font-size: 5vh;
+    font-size: 26px;
     line-height: 60px;
     height: 3vh;
     margin: 5px 0;
@@ -53,7 +57,7 @@
     font-weight: bold;
     color: orangered;
     vertical-align: middle;
-    font-size: 5vh;
+    font-size: 26px;
 }
 
 .poem {
@@ -110,7 +114,7 @@
     color: orangered;
 }
 
-.landing-screen__pager:hover {
+.landing-screen__pager {
     animation: suspend 1s infinite;
 }
 
@@ -122,7 +126,7 @@
 
 @media screen and (max-width: 720px) , (max-height: 470px) {
     .landing-screen {
-        font-size: 4vh;
+        font-size: 24px;
         padding: 15px;        
     }
 
@@ -152,11 +156,11 @@
     }
 
     .landing-screen__first-header {
-        font-size: 6vh;
+        font-size: 24px;
     }
 
     .landing-screen__second-header {
-        font-size: 5vh;
+        font-size: 20px;
     }
 }
 
