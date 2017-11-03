@@ -22,7 +22,7 @@ class NavBar extends React.Component {
     const { active } = this.state
     return (
       <nav className="nav-bar">
-        <ul className="container nav-bar__container">
+        <div className="container nav-bar__container">
           <img src={logo} alt="دایره" style={{ height: 74 }} />
           <MediaQuery query="screen and (min-width: 1024px)">
             <ul className="nav-bar__list">
@@ -43,7 +43,7 @@ class NavBar extends React.Component {
               <Footer />
             </div>
           </MediaQuery>
-        </ul>
+        </div>
       </nav>
     )
   }
