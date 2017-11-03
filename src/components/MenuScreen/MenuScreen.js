@@ -11,17 +11,19 @@ import { Footer } from '../Footer'
 
 const MenuScreen = ({ match }) => (
   <div>
-    <NavBar>
-      <NavItem selected={match.path} to="/how-we-built-our-circle">
-        چطور دایرمون رو ساختیم
-      </NavItem>
-      <NavItem selected={match.path} to="/what-we-do">
-        چکار میکنیم
-      </NavItem>
-      <NavItem selected={match.path} to="/build-your-circle">
-        دایره خودتو بساز
-      </NavItem>
-    </NavBar>
+    <header>
+      <NavBar>
+        <NavItem selected={match.path} to="/how-we-built-our-circle">
+          چطور دایرمون رو ساختیم
+        </NavItem>
+        <NavItem selected={match.path} to="/what-we-do">
+          چکار میکنیم
+        </NavItem>
+        <NavItem selected={match.path} to="/build-your-circle">
+          دایره خودتو بساز
+        </NavItem>
+      </NavBar>
+    </header>
     <Route path="/how-we-built-our-circle" component={AboutScreen} />
     <Route path="/what-we-do" component={WhatWeDoScreen} />
     <Route path="/build-your-circle" component={BuildYourCircleScreen} />

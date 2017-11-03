@@ -18,6 +18,7 @@
 }
 
 .nav-bar__link {
+  position: relative;
   display: block;
   padding: 15px 20px;
   margin: 0 15px;
@@ -27,11 +28,24 @@
 }
 
 .nav-bar__link:hover, .nav-bar__link:focus:not(.is-selected) {
-  border-bottom: 3px solid orangered;
-  outline: none;
+  
 }
 
 .nav-bar__link.is-selected {
   color: #333;
-  border-bottom: 3px solid orangered;
+}
+
+.nav-bar__link:after {
+  transition: width 0.5s;
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+  width: 0;
+  border-bottom: 2px solid orangered;
+}
+
+.nav-bar__link.is-selected:after, .nav-bar__link:hover:after {
+  width: calc(100% - 30px);
 }
