@@ -59,13 +59,7 @@ const BuildYourCircleScreen = () => (
           />
         </div>
       </div>
-      <div
-        className="choice-box"
-        style={{
-          margin: '20px 25px',
-          cursor: 'default'
-        }}
-      >
+      <div className="choice-box text-area-container">
         <div>
           <img src={ellipsis} alt="" width="40" height="50" />
           <h2 className="choice-box__title">توضیح بیشتر</h2>

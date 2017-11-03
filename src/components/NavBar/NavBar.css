@@ -6,7 +6,6 @@
 
 .nav-bar__container {
   display: flex;
-  padding: 0;
   justify-content: space-between;
   align-items: center;
 }
@@ -86,7 +85,7 @@
 
 @media screen and (min-width: 1024px) {
   .nav-bar {
-    padding: 10px 30px;
+    padding: 10px 0;
   }
 }
 
