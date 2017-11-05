@@ -36,9 +36,13 @@ class BuildYourCircleScreen extends React.Component {
 
   sendForm = async (e) => {
     e.preventDefault()
-    const data = this.state.formData
+    const { services, ...data } = this.state.formData
+    data.services = services.join(', ')
+    data['_subject'] = 'فرم سفارش'
+    this.setState({ loading: true })
     const result = await axios.post('https://formspree.io/info@dayeread.ir', data)
-    console.log(result.data)
+    this.setState({ loading: false })
+    console.log(result)
   }
 
   handleService = (service) => {
