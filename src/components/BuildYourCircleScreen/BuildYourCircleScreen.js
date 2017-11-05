@@ -13,7 +13,7 @@ import { ChoiceBox } from './ChoiceBox'
 
 const BuildYourCircleScreen = () => (
   <div className="content">
-    <form className="container">
+    <form action="https://formspree.io/info@dayeread.ir" className="container">
       <h1 className="circle-title">چه خدماتی نیاز داری</h1>
       <div className="grid">
         <div className="col">
