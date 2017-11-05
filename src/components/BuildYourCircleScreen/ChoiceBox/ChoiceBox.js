@@ -10,14 +10,16 @@ class ChoiceBox extends React.Component {
   }
 
   render() {
-    const { image, title, text } = this.props
+    const { image, title, text, disabled } = this.props
     const { selected } = this.state
     return (
       <a
         href=""
         className={selected ? 'choice-box is-selected' : 'choice-box'}
+        style={{ cursor: disabled ? 'default' : 'pointer', opacity: disabled ? 0.8 : 1 }}
         onClick={(e) => {
           e.preventDefault()
+          if (disabled) return
           this.setState({ selected: !selected })
           this.props.onClick(title)
         }}
