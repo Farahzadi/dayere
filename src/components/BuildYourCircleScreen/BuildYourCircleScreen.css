@@ -69,12 +69,20 @@
 }
 
 .button {
+    transition: background 0.5s;
     padding: 10px 25px;
+    width: 100px;
+    text-align: center;
     border: none;
     background: orangered;
     color: white;
     text-align: center;
     cursor: pointer;
+}
+
+.button.is-sent {
+    cursor: default;
+    background: rgba(4, 136, 4, 0.411);
 }
 
 .pretty-checkbox {

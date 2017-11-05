@@ -40,9 +40,16 @@ class BuildYourCircleScreen extends React.Component {
     data.services = services.join(', ')
     data['_subject'] = 'فرم سفارش'
     this.setState({ loading: true })
-    const result = await axios.post('https://formspree.io/info@dayeread.ir', data)
-    this.setState({ loading: false })
-    console.log(result)
+    try {
+      const result = await axios.post('https://formspree.io/info@dayeread.ir', data)
+      if (result.data.success) {
+        this.setState({ sent: true })
+      }
+      console.log(result)
+    } catch (err) {
+      console.warn(err)
+      this.setState({ loading: false })
+    }   
   }
 
   handleService = (service) => {
@@ -55,7 +62,8 @@ class BuildYourCircleScreen extends React.Component {
   }
 
   render() {
-    const { loading } = this.state
+    const { loading, sent } = this.state
+    const buttonContent = sent ? <span className="ion-checkmark-round" /> : 'ارسال'
     return (
       <div className="content">
         <form className="container" onSubmit={this.sendForm}>
@@ -151,7 +159,9 @@ class BuildYourCircleScreen extends React.Component {
                   <input onChange={this.handleChage('organization')} id="organization" name="organization" className="input" type="text" />
                 </div>
                 <div className="col" style={{ textAlign: 'left' }}>
-                  <button className="button">ارسال</button>
+                  <button className={sent ? 'button is-sent' : 'button'}>
+                    {buttonContent}
+                  </button>
                 </div>
               </div>
             </fieldset>
