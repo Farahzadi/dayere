@@ -15,10 +15,11 @@ class ChoiceBox extends React.Component {
     return (
       <a
         href=""
-        className={ selected ? 'choice-box is-selected' : 'choice-box'}
+        className={selected ? 'choice-box is-selected' : 'choice-box'}
         onClick={(e) => {
           e.preventDefault()
           this.setState({ selected: !selected })
+          this.props.onClick(title)
         }}
       >
         <div className="choice-box__header">
