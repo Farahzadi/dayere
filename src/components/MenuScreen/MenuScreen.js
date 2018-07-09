@@ -14,9 +14,6 @@ const MenuScreen = ({ match }) => (
   <div>
     <header>
       <NavBar>
-        <NavItem selected={match.path} to="/how-we-built-our-circle">
-          چطور دایرمون رو ساختیم
-        </NavItem>
         <NavItem selected={match.path} to="/what-we-do">
           چکار میکنیم
         </NavItem>
@@ -25,7 +22,6 @@ const MenuScreen = ({ match }) => (
         </NavItem>
       </NavBar>
     </header>
-    <Route path="/how-we-built-our-circle" component={AboutScreen} />
     <Route path="/what-we-do" component={WhatWeDoScreen} />
     <Route path="/build-your-circle" component={BuildYourCircleScreen} />
     <MediaQuery query="screen and (min-width: 1024px)">
